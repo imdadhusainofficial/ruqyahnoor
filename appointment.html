@@ -1,0 +1,1626 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Book a Ruqyah Appointment | Ruqyah Noor
+  </title>
+
+  <meta
+    name="description"
+    content="Request a Ruqyah appointment with Ruqyah Noor. Submit your details, preferred date and time for a Quran and Sunnah based Ruqyah session."
+  >
+
+  <meta
+    name="keywords"
+    content="Ruqyah appointment, book Ruqyah, online Ruqyah appointment, Ruqyah Noor, Islamic Ruqyah session"
+  >
+
+  <meta
+    name="robots"
+    content="index, follow"
+  >
+
+  <link
+    rel="canonical"
+    href="https://ruqyahnoor.netlify.app/appointment.html"
+  >
+
+  <!-- Open Graph -->
+
+  <meta
+    property="og:title"
+    content="Book a Ruqyah Appointment | Ruqyah Noor"
+  >
+
+  <meta
+    property="og:description"
+    content="Request a Quran and Sunnah based Ruqyah session through Ruqyah Noor."
+  >
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:url"
+    content="https://ruqyahnoor.netlify.app/appointment.html"
+  >
+
+  <meta
+    property="og:site_name"
+    content="Ruqyah Noor"
+  >
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+
+  <style>
+
+    /* =====================================================
+       APPOINTMENT PAGE
+    ===================================================== */
+
+    .appointment-page {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+
+    .appointment-hero {
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--green-dark),
+          var(--green)
+        );
+
+      color: var(--white);
+
+      padding: 75px 25px;
+
+      text-align: center;
+
+      border-radius: 0 0 28px 28px;
+
+      margin-bottom: 50px;
+    }
+
+
+    .appointment-hero .eyebrow {
+
+      color: var(--gold-light);
+
+      font-size: 14px;
+
+      font-weight: 700;
+
+      letter-spacing: 1.5px;
+
+      text-transform: uppercase;
+
+      margin-bottom: 12px;
+    }
+
+
+    .appointment-hero h1 {
+
+      margin: 0 0 18px;
+
+      font-size: clamp(32px, 5vw, 52px);
+
+      line-height: 1.15;
+
+      font-weight: 800;
+    }
+
+
+    .appointment-hero p {
+
+      max-width: 720px;
+
+      margin: 0 auto;
+
+      font-size: 18px;
+
+      line-height: 1.8;
+
+      color: rgba(255,255,255,0.9);
+    }
+
+
+    /* =====================================================
+       INTRO
+    ===================================================== */
+
+    .appointment-intro {
+
+      max-width: 800px;
+
+      margin: 0 auto 35px;
+
+      text-align: center;
+    }
+
+
+    .appointment-intro h2 {
+
+      color: var(--green-dark);
+
+      margin-bottom: 12px;
+
+      font-size: 30px;
+    }
+
+
+    .appointment-intro p {
+
+      color: var(--muted);
+
+      line-height: 1.8;
+
+      font-size: 17px;
+
+      margin: 0;
+    }
+
+
+    /* =====================================================
+       APPOINTMENT FORM
+       ISOLATED FORM STYLE
+    ===================================================== */
+
+    .appointment-section {
+
+      background: #f2eee4 !important;
+
+      padding: 90px 0 !important;
+    }
+
+
+    /* =====================================================
+       FORM BOX
+    ===================================================== */
+
+    #appointmentForm.appointment-form {
+
+      max-width: 950px !important;
+
+      margin: auto !important;
+
+      background: #ffffff !important;
+
+      border-radius: 20px !important;
+
+      padding: 35px !important;
+
+      box-shadow:
+        0 18px 50px rgba(18, 61, 50, 0.10) !important;
+
+      box-sizing: border-box !important;
+    }
+
+
+    /* =====================================================
+       FORM GRID
+    ===================================================== */
+
+    #appointmentForm .form-grid {
+
+      display: grid !important;
+
+      grid-template-columns:
+        repeat(2, 1fr) !important;
+
+      gap: 20px !important;
+    }
+
+
+    /* =====================================================
+       FORM GROUP
+    ===================================================== */
+
+    #appointmentForm .form-group {
+
+      display: flex !important;
+
+      flex-direction: column !important;
+    }
+
+
+    /* =====================================================
+       FULL WIDTH
+    ===================================================== */
+
+    #appointmentForm .full-width {
+
+      grid-column: 1 / -1 !important;
+    }
+
+
+    /* =====================================================
+       LABEL
+    ===================================================== */
+
+    #appointmentForm .form-group label {
+
+      color: #123d32 !important;
+
+      font-weight: 700 !important;
+
+      font-size: 14px !important;
+
+      margin-bottom: 7px !important;
+    }
+
+
+    /* =====================================================
+       INPUT / SELECT / TEXTAREA
+    ===================================================== */
+
+    #appointmentForm .form-group input,
+    #appointmentForm .form-group select,
+    #appointmentForm .form-group textarea {
+
+      width: 100% !important;
+
+      border: 1px solid #e4e8e3 !important;
+
+      border-radius: 8px !important;
+
+      padding: 13px 14px !important;
+
+      background: #fcfcfa !important;
+
+      color: #1c2824 !important;
+
+      outline: none !important;
+
+      transition: 0.2s ease !important;
+
+      box-sizing: border-box !important;
+    }
+
+
+    /* =====================================================
+       SELECT
+    ===================================================== */
+
+    #appointmentForm .form-group select {
+
+      cursor: pointer !important;
+
+      appearance: auto !important;
+    }
+
+
+    /* =====================================================
+       FOCUS
+    ===================================================== */
+
+    #appointmentForm .form-group input:focus,
+    #appointmentForm .form-group select:focus,
+    #appointmentForm .form-group textarea:focus {
+
+      border-color: #123d32 !important;
+
+      box-shadow:
+        0 0 0 3px rgba(18, 61, 50, 0.08) !important;
+    }
+
+
+    /* =====================================================
+       TEXTAREA
+    ===================================================== */
+
+    #appointmentForm .form-group textarea {
+
+      resize: vertical !important;
+
+      min-height: 140px !important;
+    }
+
+
+    /* =====================================================
+       DATE SELECTS
+    ===================================================== */
+
+    #appointmentForm .date-selects {
+
+      display: grid !important;
+
+      grid-template-columns:
+        0.8fr 1.4fr 1fr !important;
+
+      gap: 10px !important;
+    }
+
+
+    #appointmentForm .date-selects select {
+
+      width: 100% !important;
+
+      border: 1px solid #e4e8e3 !important;
+
+      border-radius: 8px !important;
+
+      padding: 13px 14px !important;
+
+      background: #fcfcfa !important;
+
+      color: #1c2824 !important;
+
+      outline: none !important;
+
+      cursor: pointer !important;
+
+      box-sizing: border-box !important;
+    }
+
+
+    #appointmentForm .date-selects select:focus {
+
+      border-color: #123d32 !important;
+
+      box-shadow:
+        0 0 0 3px rgba(18, 61, 50, 0.08) !important;
+    }
+
+
+    /* =====================================================
+       TIME SELECTS
+    ===================================================== */
+
+    #appointmentForm .time-selects {
+
+      display: grid !important;
+
+      grid-template-columns:
+        1fr 1fr 1fr !important;
+
+      gap: 10px !important;
+    }
+
+
+    #appointmentForm .time-selects select {
+
+      width: 100% !important;
+
+      border: 1px solid #e4e8e3 !important;
+
+      border-radius: 8px !important;
+
+      padding: 13px 14px !important;
+
+      background: #fcfcfa !important;
+
+      color: #1c2824 !important;
+
+      outline: none !important;
+
+      cursor: pointer !important;
+
+      transition: 0.2s ease !important;
+
+      box-sizing: border-box !important;
+    }
+
+
+    #appointmentForm .time-selects select:focus {
+
+      border-color: #123d32 !important;
+
+      box-shadow:
+        0 0 0 3px rgba(18, 61, 50, 0.08) !important;
+    }
+
+
+    /* =====================================================
+       CONSENT
+    ===================================================== */
+
+    #appointmentForm .consent label {
+
+      display: flex !important;
+
+      flex-direction: row !important;
+
+      align-items: flex-start !important;
+
+      gap: 10px !important;
+
+      color: #66736d !important;
+
+      font-weight: 400 !important;
+    }
+
+
+    #appointmentForm .consent input {
+
+      width: 18px !important;
+
+      height: 18px !important;
+
+      margin-top: 4px !important;
+    }
+
+
+    /* =====================================================
+       SUBMIT BUTTON
+    ===================================================== */
+
+    #appointmentForm .submit-button {
+
+      display: inline-block !important;
+
+      width: auto !important;
+
+      margin-top: 25px !important;
+
+      border: 0 !important;
+
+      background: #123d32 !important;
+
+      color: #ffffff !important;
+
+      padding: 13px 22px !important;
+
+      min-height: 50px !important;
+
+      border-radius: 8px !important;
+
+      font-weight: 700 !important;
+
+      cursor: pointer !important;
+
+      transition: 0.25s ease !important;
+
+      transform: none !important;
+    }
+
+
+    #appointmentForm .submit-button:hover {
+
+      background: #1d5b49 !important;
+
+      transform: translateY(-2px) !important;
+    }
+
+
+    /* =====================================================
+       FORM MESSAGE
+    ===================================================== */
+
+    #appointmentForm .form-message {
+
+      margin-top: 15px !important;
+
+      font-size: 14px !important;
+
+      color: #123d32 !important;
+    }
+
+
+    /* =====================================================
+       TABLET FORM
+    ===================================================== */
+
+    @media (max-width: 850px) {
+
+      .appointment-section {
+
+        padding: 70px 0 !important;
+      }
+
+
+      #appointmentForm.appointment-form {
+
+        padding: 30px !important;
+      }
+
+    }
+
+
+    /* =====================================================
+       MOBILE FORM
+    ===================================================== */
+
+    @media (max-width: 600px) {
+
+      .appointment-section {
+
+        padding: 60px 0 !important;
+      }
+
+
+      #appointmentForm.appointment-form {
+
+        width: calc(100% - 28px) !important;
+
+        padding: 22px !important;
+
+        border-radius: 16px !important;
+      }
+
+
+      #appointmentForm .form-grid {
+
+        grid-template-columns: 1fr !important;
+
+        gap: 16px !important;
+      }
+
+
+      #appointmentForm .full-width {
+
+        grid-column: auto !important;
+      }
+
+
+      #appointmentForm .form-group input,
+      #appointmentForm .form-group select,
+      #appointmentForm .form-group textarea {
+
+        padding: 12px !important;
+
+        font-size: 14px !important;
+      }
+
+
+      /* ===================================================
+         MOBILE DATE — THREE SELECTS IN ONE ROW
+      =================================================== */
+
+      #appointmentForm .date-selects {
+
+        display: grid !important;
+
+        grid-template-columns:
+          0.8fr 1.4fr 1fr !important;
+
+        gap: 7px !important;
+
+        width: 100% !important;
+      }
+
+
+      #appointmentForm .date-selects select {
+
+        width: 100% !important;
+
+        padding: 12px 8px !important;
+
+        font-size: 14px !important;
+
+        min-width: 0 !important;
+      }
+
+
+      /* ===================================================
+         MOBILE TIME — THREE SELECTS IN ONE ROW
+      =================================================== */
+
+      #appointmentForm .time-selects {
+
+        display: grid !important;
+
+        grid-template-columns:
+          1fr 1fr 1fr !important;
+
+        gap: 7px !important;
+
+        width: 100% !important;
+      }
+
+
+      #appointmentForm .time-selects select {
+
+        width: 100% !important;
+
+        padding: 12px 8px !important;
+
+        font-size: 14px !important;
+
+        min-width: 0 !important;
+      }
+
+
+      #appointmentForm .submit-button {
+
+        width: 100% !important;
+      }
+
+    }
+
+
+    /* =====================================================
+       INFORMATION BOX
+    ===================================================== */
+
+    .appointment-info {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+      gap: 16px;
+
+      margin-bottom: 40px;
+    }
+
+
+    .info-card {
+
+      background: var(--cream);
+
+      border: 1px solid var(--line);
+
+      border-radius: 14px;
+
+      padding: 22px;
+
+      text-align: center;
+    }
+
+
+    .info-card h3 {
+
+      margin: 0 0 8px;
+
+      color: var(--green-dark);
+
+      font-size: 18px;
+    }
+
+
+    .info-card p {
+
+      margin: 0;
+
+      color: var(--muted);
+
+      line-height: 1.7;
+
+      font-size: 14px;
+    }
+
+
+    /* =====================================================
+       NOTE
+    ===================================================== */
+
+    .appointment-note {
+
+      background: var(--white);
+
+      border: 1px solid #e7dfc9;
+
+      border-left: 4px solid var(--gold);
+
+      border-radius: 12px;
+
+      padding: 22px;
+
+      margin-bottom: 50px;
+
+      color: var(--ink);
+
+      line-height: 1.8;
+    }
+
+
+    .appointment-note strong {
+
+      color: var(--green-dark);
+    }
+
+
+    /* =====================================================
+       CTA
+    ===================================================== */
+
+    .appointment-cta {
+
+      padding: 45px 25px;
+
+      text-align: center;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--green-dark),
+          var(--green)
+        );
+
+      color: var(--white);
+
+      border-radius: 22px;
+
+      margin-bottom: 20px;
+    }
+
+
+    .appointment-cta h2 {
+
+      margin: 0 0 12px;
+
+      font-size: 28px;
+    }
+
+
+    .appointment-cta p {
+
+      max-width: 650px;
+
+      margin: 0 auto 22px;
+
+      color: rgba(255,255,255,0.9);
+
+      line-height: 1.8;
+    }
+
+
+    .appointment-btn {
+
+      display: inline-block;
+
+      padding: 13px 24px;
+
+      border-radius: 8px;
+
+      background: var(--gold);
+
+      color: var(--green-dark);
+
+      text-decoration: none;
+
+      font-weight: 700;
+
+      transition: 0.25s ease;
+    }
+
+
+    .appointment-btn:hover {
+
+      background: var(--gold-light);
+
+      transform: translateY(-2px);
+    }
+
+
+    /* =====================================================
+       MOBILE PAGE
+    ===================================================== */
+
+    @media (max-width: 700px) {
+
+      .appointment-page {
+
+        padding: 12px;
+      }
+
+
+      .appointment-hero {
+
+        padding: 55px 18px;
+
+        border-radius:
+          0 0 20px 20px;
+
+        margin-bottom: 40px;
+      }
+
+
+      .appointment-hero h1 {
+
+        font-size: 34px;
+      }
+
+
+      .appointment-hero p {
+
+        font-size: 16px;
+
+        line-height: 1.7;
+      }
+
+
+      .appointment-info {
+
+        grid-template-columns: 1fr;
+      }
+
+
+      .appointment-cta {
+
+        padding: 38px 18px;
+
+        border-radius: 18px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- =====================================================
+       HEADER
+  ===================================================== -->
+
+  <header class="site-header">
+
+    <div class="container header-inner">
+
+
+      <!-- COMPLETE LOGO -->
+
+      <a
+        href="index.html"
+        class="logo"
+      >
+
+        <span class="logo-mark">
+          RN
+        </span>
+
+        <span class="logo-text">
+
+          <strong>
+            Ruqyah Noor
+          </strong>
+
+          <small>
+            Quran &amp; Sunnah Based Ruqyah
+          </small>
+
+        </span>
+
+      </a>
+
+
+      <!-- MOBILE MENU BUTTON -->
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open Menu"
+        aria-expanded="false"
+        type="button"
+      >
+        ☰
+      </button>
+
+
+      <!-- MAIN NAVIGATION -->
+
+      <nav
+        class="main-nav"
+        id="mainNav"
+      >
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="about-ruqyah.html">
+          About Ruqyah
+        </a>
+
+        <a href="services.html">
+          Services
+        </a>
+
+        <a href="online-ruqyah.html">
+          Online Ruqyah
+        </a>
+
+        <a href="articles.html">
+          Articles
+        </a>
+
+        <a href="faq.html">
+          FAQ
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+        <a
+          href="appointment.html"
+          class="nav-button"
+        >
+          Book Appointment
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- =====================================================
+       HERO
+  ===================================================== -->
+
+  <section class="appointment-hero">
+
+    <div class="eyebrow">
+      Ruqyah Noor
+    </div>
+
+
+    <h1>
+      Book a Ruqyah Appointment
+    </h1>
+
+
+    <p>
+      Submit your details and preferred date and time
+      to request a Quran and Sunnah based Ruqyah session.
+    </p>
+
+  </section>
+
+
+  <main class="appointment-page">
+
+
+    <!-- =====================================================
+         INTRO
+    ===================================================== -->
+
+    <section class="appointment-intro">
+
+      <h2>
+        Request Your Appointment
+      </h2>
+
+
+      <p>
+        Please complete the form below with accurate
+        information. After submitting the form, WhatsApp
+        will open with your appointment details prepared
+        as a message.
+      </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         APPOINTMENT FORM
+    ===================================================== -->
+
+    <section class="appointment-section">
+
+
+      <form
+        id="appointmentForm"
+        class="appointment-form"
+      >
+
+        <div class="form-grid">
+
+
+          <!-- NAME -->
+
+          <div class="form-group">
+
+            <label for="name">
+              Full Name
+            </label>
+
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            >
+
+          </div>
+
+
+          <!-- COUNTRY -->
+
+          <div class="form-group">
+
+            <label for="country">
+              Country
+            </label>
+
+            <input
+              type="text"
+              id="country"
+              name="country"
+              placeholder="Your country"
+              required
+            >
+
+          </div>
+
+
+          <!-- CITY -->
+
+          <div class="form-group">
+
+            <label for="city">
+              City
+            </label>
+
+            <input
+              type="text"
+              id="city"
+              name="city"
+              placeholder="Your city"
+            >
+
+          </div>
+
+
+          <!-- AGE -->
+
+          <div class="form-group">
+
+            <label for="age">
+              Age
+            </label>
+
+            <input
+              type="number"
+              id="age"
+              name="age"
+              placeholder="Age"
+              min="1"
+              max="120"
+            >
+
+          </div>
+
+
+          <!-- GENDER -->
+
+          <div class="form-group">
+
+            <label for="gender">
+              Gender
+            </label>
+
+            <select
+              id="gender"
+              name="gender"
+            >
+
+              <option value="">
+                Select Gender
+              </option>
+
+              <option value="Male">
+                Male
+              </option>
+
+              <option value="Female">
+                Female
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <!-- LANGUAGE -->
+
+          <div class="form-group">
+
+            <label for="language">
+              Preferred Language
+            </label>
+
+            <select
+              id="language"
+              name="language"
+            >
+
+              <option value="">
+                Select Language
+              </option>
+
+              <option value="English">
+                English
+              </option>
+
+              <option value="Urdu">
+                اردو
+              </option>
+
+              <option value="Arabic">
+                العربية
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <!-- WHATSAPP -->
+
+          <div class="form-group">
+
+            <label for="whatsapp">
+              Your WhatsApp Number
+            </label>
+
+            <input
+              type="tel"
+              id="whatsapp"
+              name="whatsapp"
+              placeholder="+92..."
+              required
+            >
+
+          </div>
+
+
+          <!-- DATE -->
+
+          <div class="form-group">
+
+            <label>
+              Preferred Date
+            </label>
+
+
+            <div class="date-selects">
+
+
+              <select
+                id="dateDay"
+                name="dateDay"
+                required
+              >
+
+                <option value="">
+                  Day
+                </option>
+
+              </select>
+
+
+              <select
+                id="dateMonth"
+                name="dateMonth"
+                required
+              >
+
+                <option value="">
+                  Month
+                </option>
+
+                <option value="01">
+                  January
+                </option>
+
+                <option value="02">
+                  February
+                </option>
+
+                <option value="03">
+                  March
+                </option>
+
+                <option value="04">
+                  April
+                </option>
+
+                <option value="05">
+                  May
+                </option>
+
+                <option value="06">
+                  June
+                </option>
+
+                <option value="07">
+                  July
+                </option>
+
+                <option value="08">
+                  August
+                </option>
+
+                <option value="09">
+                  September
+                </option>
+
+                <option value="10">
+                  October
+                </option>
+
+                <option value="11">
+                  November
+                </option>
+
+                <option value="12">
+                  December
+                </option>
+
+              </select>
+
+
+              <select
+                id="dateYear"
+                name="dateYear"
+                required
+              >
+
+                <option value="">
+                  Year
+                </option>
+
+              </select>
+
+            </div>
+
+          </div>
+
+
+          <!-- TIME -->
+
+          <div class="form-group">
+
+            <label for="timeHour">
+              Preferred Time
+            </label>
+
+
+            <div class="time-selects">
+
+
+              <select
+                id="timeHour"
+                name="timeHour"
+                required
+              >
+
+                <option value="">
+                  Hour
+                </option>
+
+              </select>
+
+
+              <select
+                id="timeMinute"
+                name="timeMinute"
+                required
+              >
+
+                <option value="">
+                  Minute
+                </option>
+
+              </select>
+
+
+              <select
+                id="timePeriod"
+                name="timePeriod"
+                required
+              >
+
+                <option value="">
+                  AM / PM
+                </option>
+
+                <option value="AM">
+                  AM
+                </option>
+
+                <option value="PM">
+                  PM
+                </option>
+
+              </select>
+
+            </div>
+
+          </div>
+
+
+          <!-- CONCERN -->
+
+          <div class="form-group full-width">
+
+            <label for="concern">
+              Briefly Describe Your Concern
+            </label>
+
+            <textarea
+              id="concern"
+              name="concern"
+              rows="6"
+              placeholder="Please briefly describe your concern..."
+              required
+            ></textarea>
+
+          </div>
+
+
+          <!-- CONSENT -->
+
+          <div class="form-group full-width consent">
+
+            <label>
+
+              <input
+                type="checkbox"
+                id="consent"
+                name="consent"
+                required
+              >
+
+              <span>
+
+                I understand that Ruqyah is religious
+                guidance and does not replace necessary
+                medical care.
+
+              </span>
+
+            </label>
+
+          </div>
+
+
+        </div>
+
+
+        <!-- SUBMIT -->
+
+        <button
+          type="submit"
+          class="btn btn-primary submit-button"
+        >
+          Send Appointment Request on WhatsApp
+        </button>
+
+
+        <!-- MESSAGE -->
+
+        <p
+          id="formMessage"
+          class="form-message"
+        ></p>
+
+
+      </form>
+
+    </section>
+
+
+    <!-- =====================================================
+         INFORMATION CARDS
+    ===================================================== -->
+
+    <section class="appointment-info">
+
+
+      <div class="info-card">
+
+        <h3>
+          1. Submit Your Request
+        </h3>
+
+        <p>
+          Complete the appointment form with your basic
+          information and preferred time.
+        </p>
+
+      </div>
+
+
+      <div class="info-card">
+
+        <h3>
+          2. WhatsApp
+        </h3>
+
+        <p>
+          Your appointment details will be prepared in
+          WhatsApp so you can send the request.
+        </p>
+
+      </div>
+
+
+      <div class="info-card">
+
+        <h3>
+          3. Confirmation
+        </h3>
+
+        <p>
+          The requested appointment time is confirmed
+          separately after communication.
+        </p>
+
+      </div>
+
+
+    </section>
+
+
+    <!-- =====================================================
+         IMPORTANT NOTE
+    ===================================================== -->
+
+    <div class="appointment-note">
+
+      <strong>
+        Important information:
+      </strong>
+
+      <br>
+
+      Submitting this form does not automatically confirm
+      an appointment. The requested date and time are
+      preferences and must be confirmed separately.
+
+      <br><br>
+
+      Ruqyah Noor does not guarantee a specific healing
+      outcome and does not present Ruqyah as a replacement
+      for necessary medical care.
+
+    </div>
+
+
+    <!-- =====================================================
+         CTA
+    ===================================================== -->
+
+    <section class="appointment-cta">
+
+      <h2>
+        Have Questions Before Booking?
+      </h2>
+
+
+      <p>
+        Read our frequently asked questions or learn more
+        about our Ruqyah services before submitting your
+        appointment request.
+      </p>
+
+
+      <a
+        href="faq.html"
+        class="appointment-btn"
+      >
+        Read Frequently Asked Questions
+      </a>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- =====================================================
+       FOOTER
+  ===================================================== -->
+
+  <footer class="site-footer">
+
+    <div class="container">
+
+
+      <div class="footer-brand">
+
+        <h3>
+          Ruqyah Noor
+        </h3>
+
+        <p>
+          Quran &amp; Sunnah Based Ruqyah
+        </p>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="about-ruqyah.html">
+          About Ruqyah
+        </a>
+
+        <a href="services.html">
+          Services
+        </a>
+
+        <a href="online-ruqyah.html">
+          Online Ruqyah
+        </a>
+
+        <a href="articles.html">
+          Articles
+        </a>
+
+        <a href="faq.html">
+          FAQ
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+        <a href="appointment.html">
+          Appointment
+        </a>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <p>
+
+          ©
+
+          <span id="year"></span>
+
+          Ruqyah Noor.
+          All rights reserved.
+
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </footer>
+
+
+  <!-- =====================================================
+       MAIN JAVASCRIPT
+       MOBILE MENU + APPOINTMENT + WHATSAPP
+  ===================================================== -->
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
